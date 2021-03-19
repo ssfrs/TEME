@@ -1,3 +1,7 @@
+@import "6-reset";
+@import "6-culori";
+@import "6-extend";
+
 @mixin hover {
   &:not([disabled]):hover {
     @content;
@@ -21,7 +25,7 @@
   .tab {
     width: 100%;
     height: $tab-height;
-    background-color: lightgrey;
+    background-color: $fundal;
     position: relative;
   }
   div.rama input {
@@ -37,7 +41,7 @@
     cursor: pointer;
   }
   div.rama input:checked + label {
-    background: black;
+    background: $btnactiv;
     color: white;
     cursor: default;
   }
@@ -52,4 +56,21 @@
   div.rama input:nth-of-type(4):checked ~ .tab:nth-of-type(4) {
     display: block;
   }
+}
+
+@mixin bula($size) {
+  width: $size;
+  height: $size;
+  border-radius: $size / 2;
+  background-color: $btnactiv;
+  box-shadow: 0 0 ($size / 4) 0 $btnhover;
+  position: relative;
+}
+
+@mixin animatie($name, $timp) {
+  animation-name: $name;
+  animation-duration: $timp;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
