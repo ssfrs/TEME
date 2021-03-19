@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+}
+.grid-container > div {
+  padding: 20px;
+}
+.grid-container {
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 640px;
+  display: grid;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-areas:
+    "a b c"
+    "d b c"
+    "e e c"
+    "e e c";
+}
+
+.a {
+  background-color: rgb(91, 218, 154);
+  grid-area: a;
+}
+
+.b {
+  background-color: rgb(27, 69, 206);
+  grid-area: b;
+}
+
+.c {
+  background-color: rgb(50, 219, 78);
+  grid-area: c;
+}
+
+.d {
+  background-color: rgb(205, 228, 0);
+  grid-area: d;
+}
+
+.e {
+  background-color: rgb(187, 23, 113);
+  grid-area: e;
+}

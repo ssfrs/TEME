@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 900px;
+  margin: auto;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+}
+nav {
+  margin: 20px;
+}
+.titlu {
+  padding: 10px;
+  border: solid 2px;
+  background-color: #6a6;
+}
+.neord li {
+  margin: 15px 0 15px 0;
+  background-color: #de1e7e;
+  width: 12mm;
+}
+p {
+  font-size: 20px;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  border: dotted 2px black;
+  background-color: #fb1;
+  margin: 10px 0 10px 0;
+}
+.primu {
+  border-bottom: dashed blue;
+  background-color: #a1a1a1;
+}

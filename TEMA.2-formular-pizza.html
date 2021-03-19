@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="css/TEMA.2-formular-pizza.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>TEMA 2 Formular Pizza</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a> | <a href="TEMA.2-liste.html">Liste</a> |
+      <a href="TEMA.2-search-bar.html">Search Bar</a> |
+      <a href="TEMA.2-formular-pizza.html">Formulare Pizza</a> |
+      <a href="TEMA.2-formular-travel.html">Formular Travel</a>
+    </nav>
+    <br />
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Pizza Order</legend>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Your email:</label>
+        <input type="text" id="email" name="email" /><br /><br />
+        <label for="topping">Topping:</label>
+
+        <input type="radio" id="supreme" name="topping" value="supreme" />
+        <label for="supreme">Supreme</label>
+        <input type="radio" id="vegetarian" name="topping" value="vegetarian" />
+        <label for="vegetarian">Vegetarian</label>
+        <input type="radio" id="hawaian" name="topping" value="hawaian" />
+        <label for="hawaian">Hawaian</label><br />
+        <br />
+        <label for="sauce">Sauce:</label>
+        <select name="sauce" id="sauce">
+          <option value="tomato">Tomato</option>
+          <option value="garlig">Garlig</option>
+          <option value="pesto">Pesto</option>
+        </select>
+        <br /><br />
+        <label for="extras">Extras:</label>
+        <input type="checkbox" id="extras1" name="cheese" value="cheese" />
+        <label for="extras1">Cheese</label>
+        <input type="checkbox" id="extras2" name="onion" value="onion" />
+        <label for="extras2">Onion</label>
+        <input type="checkbox" id="extras3" name="olives" value="olives" />
+        <label for="extras3">Olives</label>
+        <br /><br />
+        <label for="delivery">Delivery instruction:</label><br />
+        <textarea id="delivery" name="delivery" rows="4" cols="65"></textarea>
+        <button type="submit">Send order</button>
+      </fieldset>
+    </form>
+    <br />
+    <hr />
+    <br />
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Pizza Order</legend>
+        <label for="name1">Your name:</label>
+        <input
+          type="text"
+          id="name1"
+          name="name"
+          required
+          minlength="3"
+          maxlength="10"
+          placeholder="Ion Ion"
+        /><br /><br />
+        <label for="email1">Your email:</label>
+        <input
+          type="text"
+          id="email1"
+          name="email"
+          required
+          placeholder="ion@example.jx"
+        /><br /><br />
+        <label for="topping1">Topping:</label>
+
+        <input type="radio" id="supreme1" name="topping1" value="supreme" />
+        <label for="supreme1">Supreme</label>
+        <input
+          type="radio"
+          id="vegetarian1"
+          name="topping1"
+          value="vegetarian"
+        />
+        <label for="vegetarian1">Vegetarian</label>
+        <input
+          type="radio"
+          id="hawaian1"
+          name="topping1"
+          value="hawaian"
+          checked
+        />
+        <label for="hawaian1">Hawaian</label><br />
+        <br />
+        <label for="sauce1">Sauce:</label>
+        <select name="sauce" id="sauce1">
+          <option value="tomato">Tomato</option>
+          <option value="garlig">Garlig</option>
+          <option value="pesto">Pesto</option>
+        </select>
+        <br /><br />
+        <label for="extras1">Extras:</label>
+        <input
+          type="checkbox"
+          id="extras11"
+          name="extras"
+          value="cheese"
+          checked
+        />
+        <label for="extras11">Cheese</label>
+        <input type="checkbox" id="extras21" name="extras" value="onion" />
+        <label for="extras21">Onion</label>
+        <input type="checkbox" id="extras31" name="extras" value="olives" />
+        <label for="extras31">Olives</label>
+        <br /><br />
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          step="1"
+          min="1"
+          max="7"
+        />
+        <br /><br />
+        <label for="delivery1">Delivery instruction:</label><br />
+        <textarea
+          id="delivery1"
+          name="delivery"
+          rows="4"
+          cols="65"
+          required
+        ></textarea>
+        <br />
+        <br />
+        <label for="date">Delivery date:</label><br />
+        <input type="date" id="date" name="date" min="2021-01-01" />
+        <br /><br />
+        <button type="submit">Send order</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+    <br />
+  </body>
+</html>

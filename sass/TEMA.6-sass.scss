@@ -1,0 +1,12 @@
+@import "6-reset";
+@import "6-culori";
+@import "6-mixin";
+@import "6-extend";
+body {
+  @extend %body;
+}
+nav {
+  @extend %nav;
+}
+/*------------------------------*/
+@include tab(50%, 500px);

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 900px;
+  margin: auto;
+}
+nav {
+  margin: 20px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  background-color: yellow;
+  width: 90%;
+  box-sizing: border-box;
+  height: 70px;
+  position: relative;
+}
+
+.nav li img {
+  height: 40px;
+}
+li {
+  position: relative;
+  margin: auto;
+}

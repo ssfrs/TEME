@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 900px;
+  margin: auto;
+}
+nav {
+  margin: 20px;
+}
+h2 {
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.rama {
+  box-shadow: 0 0 10px 5px lightgrey;
+  margin-bottom: 30px;
+}
+.tab {
+  width: 900px;
+  height: 900px;
+  background-color: lightgrey;
+  position: relative;
+}
+div.rama input {
+  display: none;
+}
+div.rama label {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+}
+div.rama input:checked + label {
+  background: black;
+  color: white;
+  cursor: default;
+}
+div.rama div.tab {
+  display: none;
+  clear: left;
+}
+
+div.rama input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+div.rama input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+div.rama input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+  display: block;
+}
+div.patrat {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+div.I {
+  background-color: yellow;
+}
+div.II {
+  background-color: blue;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+div.III {
+  background-color: green;
+  position: relative;
+  top: -200px;
+  left: 200px;
+}
+div.IV {
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+div.V {
+  background-color: blue;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+div.VI {
+  background-color: green;
+  position: relative;
+  top: -200px;
+  left: 200px;
+}
+div.VII {
+  background-color: yellow;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+div.VIII {
+  background-color: blue;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+div.IX {
+  background-color: green;
+  position: relative;
+  top: -200px;
+  left: 200px;
+}

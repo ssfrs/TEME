@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  max-width: 900px;
+  margin: auto;
+}
+nav {
+  text-align: center;
+  margin: 40px 20px 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------*/
+.grid {
+  grid-gap: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "e e e";
+  margin: auto;
+}
+h2 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+.mij p {
+  text-align: justify;
+  padding: 30px 10px 30px 10px;
+  color: white;
+}
+/*---------PC-MODE--------*/
+.grid .head {
+  grid-area: a;
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+}
+.grid .stg {
+  grid-area: b;
+  background-color: darkgoldenrod;
+}
+.grid .mij {
+  grid-area: c;
+  background-color: darkred;
+}
+.grid .dr {
+  grid-area: d;
+  background-color: lightsalmon;
+}
+.grid footer {
+  grid-area: e;
+  background-color: red;
+}
+
+@media only screen and (max-width: 720px) {
+  .grid {
+    grid-gap: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px auto 50px 50px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin: auto;
+  }
+}
+@media print {
+  body {
+    width: 180mm;
+  }
+  .prim {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  .cont {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  p {
+    color: black;
+  }
+}

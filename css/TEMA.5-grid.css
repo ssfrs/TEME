@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 700px;
+  margin: auto;
+}
+nav {
+  text-align: center;
+  margin: 40px 20px 40px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-areas:
+    "a a c c c c c c c c"
+    "a a c c c c c c c c"
+    "a a c c c c c c c c"
+    "a a c c c c c c c c"
+    "b b c c c c c c c c"
+    "b b c c c c c c c c"
+    "b b c c c c c c c c"
+    "b b c c c c c c c c"
+    "d d e e e e e e e f"
+    "d d e e e e e e e g";
+  margin: auto;
+}
+
+.a {
+  background-color: white;
+  grid-area: a;
+}
+
+.b {
+  background-color: white;
+  grid-area: b;
+}
+
+.c {
+  background-color: red;
+  grid-area: c;
+}
+
+.d {
+  background-color: blue;
+  grid-area: d;
+}
+
+.e {
+  background-color: white;
+  grid-area: e;
+}
+
+.f {
+  background-color: white;
+  grid-area: f;
+}
+
+.g {
+  background-color: yellow;
+  grid-area: g;
+}

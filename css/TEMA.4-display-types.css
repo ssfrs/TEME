@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 900px;
+  margin: auto;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+}
+nav {
+  margin: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  visibility: hidden;
+}
+h2 {
+  display: none;
+}
+ul li {
+  display: inline;
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 700px;
+  margin: auto;
+}
+nav {
+  margin: 40px 20px 40px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex header {
+  padding: 30px;
+  text-align: center;
+  background-color: orangered;
+  flex: 100%;
+}
+.flex .st {
+  flex: 25%;
+  background-color: yellow;
+  padding: 10px 0 0 0;
+}
+.flex .dr {
+  flex: 25%;
+  background-color: purple;
+  padding: 10px 0 0 0;
+}
+.flex .main {
+  flex: 50%;
+  background-color: lightskyblue;
+  padding: 10px 5px 10px 5px;
+}
+.flex footer {
+  padding: 20px;
+  text-align: center;
+  background-color: lightgreen;
+  flex: 100%;
+}

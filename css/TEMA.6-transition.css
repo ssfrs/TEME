@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  max-width: 900px;
+  margin: auto;
+}
+nav {
+  text-align: center;
+  margin: 40px 20px 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------*/
+.rama {
+  box-shadow: 0 0 10px 5px lightgrey;
+  margin-bottom: 30px;
+}
+.tab {
+  width: 100%;
+  height: 500px;
+  background-color: lightgrey;
+  position: relative;
+}
+div.rama input {
+  display: none;
+}
+div.rama label {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+div.rama input:checked + label {
+  background: black;
+  color: white;
+  cursor: default;
+}
+div.rama div.tab {
+  display: none;
+  clear: left;
+}
+
+div.rama input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+div.rama input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+div.rama input:nth-of-type(3):checked ~ .tab:nth-of-type(3),
+div.rama input:nth-of-type(4):checked ~ .tab:nth-of-type(4) {
+  display: block;
+}
+/*----------------------*/
+h2 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.patrat {
+  width: 100px;
+  height: 100px;
+}
+.I {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  top: 200px;
+  transition: 1s;
+}
+.I:hover {
+  transform: rotate(180deg);
+  background-color: yellow;
+}
+.cont {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.199);
+  border-radius: 3mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+}
+.II {
+  position: relative;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+  transition: 3s;
+}
+.III {
+  background-color: blue;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  transition: 3s;
+  transition-delay: 3s;
+}
+.aaa:hover .II {
+  width: 300px;
+}
+.aaa:hover .III {
+  width: 300px;
+}
+.card {
+  width: 250px;
+  height: 400px;
+}
+.opaci {
+  background-color: red;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 2mm;
+  background-image: url(https://magyarmezogazdasag.hu/sites/default/files/uploads/2019-10/yongqing_bao_0_0.jpeg);
+  background-size: cover;
+  background-position: 67%;
+  box-shadow: 0 0 3mm 1mm rgba(0, 0, 0, 0.205);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.4s;
+}
+.opaci .degrade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9056664902289041) 5%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 2mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.opaci .degrade span {
+  background-color: red;
+  border-radius: 1mm;
+  padding: 1mm 3mm;
+  align-self: flex-start;
+  margin-left: 2mm;
+}
+.opaci .degrade h2 {
+  text-align: center;
+  padding: 3mm 0;
+  align-items: center;
+}
+.opaci .degrade small {
+  background-color: rgb(54, 0, 124);
+  align-self: flex-start;
+  padding: 1mm 2mm;
+  border-radius: 1mm;
+  margin-bottom: 2mm;
+  margin-left: 2mm;
+}
+.opaci:hover {
+  opacity: 0.7;
+}
+/*---------------*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://scontent.fotp1-1.fna.fbcdn.net/v/t1.15752-9/161944670_368475230847817_6854646674382241723_n.png?_nc_cat=107&ccb=1-3&_nc_sid=ae9488&_nc_ohc=e5ON6YWBigkAX9iHXFx&_nc_ht=scontent.fotp1-1.fna&oh=18c51504998e0933ca29a1bebe004340&oe=60773AF7");
+  background-position: center;
+  background-size: cover;
+}
+
+.flip-card-back {
+  background-image: url(https://scontent.fotp1-1.fna.fbcdn.net/v/t1.15752-9/162192603_455826958951717_5050554065019139811_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=kfYQXIicZ7YAX_LhczV&_nc_ht=scontent.fotp1-1.fna&oh=1384a33aa3ea19e3f75847fc28ff2c1b&oe=6076C915);
+  transform: rotateY(180deg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

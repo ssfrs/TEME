@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 900px;
+  margin: auto;
+}
+nav {
+  margin: 20px;
+}
+.rama {
+  box-shadow: 0 0 10px 5px lightgrey;
+  margin-bottom: 30px;
+}
+.tab {
+  width: 900px;
+  height: 500px;
+  background-color: lightgrey;
+  position: relative;
+  overflow: auto;
+}
+div.rama input {
+  display: none;
+}
+div.rama label {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 450px;
+  text-align: center;
+  cursor: pointer;
+}
+div.rama input:checked + label {
+  background: black;
+  color: white;
+  cursor: default;
+}
+div.rama div.tab {
+  display: none;
+  clear: left;
+}
+
+div.rama input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+div.rama input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
+  display: block;
+}
+
+.backgroundI {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1200px;
+  position: relative;
+}
+.backgroundI img {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.backgroundI .text {
+  width: 370px;
+  height: 120px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: whitesmoke;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.backgroundI .text h1 {
+  padding: 10px;
+}
+.backgroundI .text button {
+  margin: 10px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 2mm;
+}
+.backgroundI .overlay {
+  width: 800px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.132);
+  position: absolute;
+  top: 0px;
+}
+.backgroundI .text:hover ~ .overlay {
+  background-color: rgba(0, 255, 0, 0.621);
+}
+.backgroundI .text button {
+  background-color: yellow;
+}
+.backgroundII {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1200px;
+  position: relative;
+  background-color: red;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 188, 188),
+    rgb(0, 60, 255)
+  );
+}
+.backgroundII .text2 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 350px;
+  position: relative;
+  top: 250px;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.backgroundII .text2 .btnI {
+  padding: 5px 10px 5px 10px;
+  border: solid 2px white;
+  border-radius: 100px;
+  color: rgba(0, 153, 255, 0.995);
+  font-weight: bold;
+  outline: none;
+  font-size: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+.backgroundII .text2 .btnII {
+  padding: 5px 18px 5px 18px;
+  border: solid 2px white;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.btnI:hover {
+  background-color: black;
+}
+.btnI:focus {
+  background-color: gray;
+}
+.btnI:active {
+  background-color: orange;
+}

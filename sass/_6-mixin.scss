@@ -1,0 +1,55 @@
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
+/*-----------*/
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+/*------------*/
+@mixin tab($btn-width, $tab-height) {
+  .rama {
+    box-shadow: 0 0 10px 5px lightgrey;
+    margin-bottom: 30px;
+  }
+  .tab {
+    width: 100%;
+    height: $tab-height;
+    background-color: lightgrey;
+    position: relative;
+  }
+  div.rama input {
+    display: none;
+  }
+  div.rama label {
+    display: block;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: $btn-width;
+    text-align: center;
+    cursor: pointer;
+  }
+  div.rama input:checked + label {
+    background: black;
+    color: white;
+    cursor: default;
+  }
+  div.rama div.tab {
+    display: none;
+    clear: left;
+  }
+
+  div.rama input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+  div.rama input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+  div.rama input:nth-of-type(3):checked ~ .tab:nth-of-type(3),
+  div.rama input:nth-of-type(4):checked ~ .tab:nth-of-type(4) {
+    display: block;
+  }
+}

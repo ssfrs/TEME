@@ -1,0 +1,27 @@
+@charset "utf-8";
+body {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  width: 500px;
+  min-height: 120vh;
+}
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+div {
+  margin: auto;
+  width: 300px;
+  b-ackground-color: green;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}

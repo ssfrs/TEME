@@ -1,0 +1,67 @@
+body {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  width: 600px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+}
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* ca sa nu am diferente de margini stanga si dreapta
+aleg sa pastrez scroll barul de la formular pizza 
+(varianta 2 fiind calcularea marginii din stanga)*/
+
+/* latime scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* sina de tren */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 5px rgb(240, 240, 240);
+}
+
+/* tren */
+::-webkit-scrollbar-thumb {
+  background: darkorange;
+  border-radius: 2.5px;
+}
+
+/* tren hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 75, 0);
+}
+div {
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 5px lightgrey;
+  border-radius: 5px;
+}
+table {
+  margin: auto;
+  margin-top: 18px;
+  margin-left: 18px;
+  box-shadow: 0px 0px 5px 3px rgb(146, 146, 146);
+  border-radius: 3px;
+  background-color: black;
+  position: absolute;
+}
+table tr td {
+  width: 60px;
+  height: 60px;
+}
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background: black;
+}
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+  background: white;
+}

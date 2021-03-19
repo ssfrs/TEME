@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 700px;
+  margin: auto;
+}
+nav {
+  text-align: center;
+  margin: 40px 20px 40px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main {
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  color: white;
+}
+.item1 {
+  grid-area: a;
+  display: grid;
+  grid-template-rows: 15mm auto 15mm 15mm 15mm 15mm 15mm;
+  grid-gap: 2mm;
+}
+.item1 > div {
+  background-color: rgba(144, 238, 144, 0);
+}
+.material-icons {
+  color: white;
+  padding: 15px;
+  font-size: 48px;
+}
+.item2 {
+  display: grid;
+  grid-area: b;
+  overflow: auto;
+  grid-template-rows: repeat(20, 15mm);
+  grid-gap: 2mm;
+}
+.b {
+  position: relative;
+  display: grid;
+  grid-template-columns: 57px auto;
+  grid-gap: 2mm;
+}
+.logo {
+  position: relative;
+  height: 56px;
+  background-color: rgba(0, 120, 222);
+}
+.none {
+  grid-column: 1 / span 2;
+  background-color: rgba(0, 0, 0, 0);
+}
+.itm432 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+p {
+  position: relative;
+  text-align: left;
+  top: 30%;
+  font-size: 17px;
+  padding-left: 2mm;
+  color: white;
+}
+span {
+  position: relative;
+  font-size: 17px;
+  left: -8mm;
+  top: -2mm;
+}
+/*-----------------------------------------------*/
+/* latime scroll bar */
+.item2::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* sina de tren */
+.item2::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px rgba(250, 128, 114, 0);
+}
+
+/* tren */
+.item2::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 2.5px;
+}
+/*-----------------------------------------------------*/
+
+.item2 > div {
+  background-color: rgba(240, 128, 128, 0);
+}
+.item3 {
+  grid-area: c1;
+}
+.item4 {
+  grid-area: c2;
+}
+.item5 {
+  grid-area: c3;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 15mm 60mm 15mm 60mm 15mm 30mm;
+  grid-template-columns: 15mm 70mm 95mm;
+  grid-template-areas:
+    "a b c1"
+    "a b c2"
+    "a b c3"
+    "a b c4"
+    "a b c5"
+    "a b c6";
+  grid-gap: 2mm;
+  background-color: rgb(42, 42, 42);
+  padding: 4mm 0mm;
+  height: 213mm;
+  width: 188mm;
+  box-sizing: border-box;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  font-size: 30px;
+}
+
+.item4 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2mm;
+}
+.item4 > div {
+  background-color: rgb(17, 143, 253);
+}
+.item4 .item4-1 {
+  background-color: rgb(64, 64, 64);
+}
+.item6 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2mm;
+}
+.item6 > div {
+  background-color: rgb(17, 143, 253);
+}
+.item8 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2mm;
+}
+.item8 > div {
+  background-color: rgb(17, 143, 253);
+}
+.item4-1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+.itm1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #8c2811;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item4-4 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+.itm2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item4-5 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+.itm3 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #00f7ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item4-6 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+.itm4 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #ca5439;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.it {
+  position: relative;
+  top: 1mm;
+  left: 0;
+}
+.item4 .item4-2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "aa bb cc"
+    "dd ee ff"
+    "gg . .";
+}
+.item4 .item4-2 .pri {
+  background-image: url(https://www.logo.wine/a/logo/Microsoft_Edge/Microsoft_Edge-New-Logo.wine.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: #074577;
+  grid-area: aa;
+}
+.item4 .item4-2 .prii {
+  background-image: url(https://logodownload.org/wp-content/uploads/2018/10/word-logo-0.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #13366a;
+  grid-area: bb;
+}
+.item4 .item4-2 .priii {
+  background-image: url(https://download.logo.wine/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #0e4129;
+  grid-area: cc;
+}
+.item4 .item4-2 .priv {
+  background-image: url(https://www.logolynx.com/images/logolynx/1a/1af4a4fe2192d0fcc504af3555c43a7c.png);
+  background-size: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(70, 70, 70);
+  grid-area: dd;
+}
+.item4 .item4-2 .prv {
+  background-image: url(https://download.logo.wine/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #8c2811;
+  grid-area: ee;
+}
+.item4 .item4-2 .prvi {
+  background-image: url(https://store-images.s-microsoft.com/image/apps.59305.9007199266248565.0e927cd0-053d-42f5-8f09-02d69ba4257e.520b0383-7b08-4a3d-a659-4f924b87e721);
+  background-size: 90px;
+  background-position: center;
+  background-color: #5d188f;
+  grid-area: ff;
+}
+.item4 .item4-2 .prvii {
+  background-image: url(https://logodownload.org/wp-content/uploads/2017/05/skype-logo-1.png);
+  background-size: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #264761;
+}
+.item6 .item6-2 {
+  background-image: url(https://i.pinimg.com/originals/ba/a9/01/baa901964d99f8483fd74f5252bbcaa9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item6 .item6-3 {
+  background-color: red;
+}
+.item6 .item6-5 {
+  background-image: url(https://www.nxtbookmedia.com/wp-content/uploads/2014/06/netflix.png);
+  background-position: center;
+  background-size: cover;
+}
+.item6-6 {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "aaa bbb ccc"
+    "ddd eee fff"
+    "ggg ggg ggg";
+}
+.item6 .item6-6 .pri {
+  background-image: url(https://play-lh.googleusercontent.com/TLUeelx8wcpEzf3hoqeLxPs3ai1tdGtAZTIFkNqy3gbDp1NPpNFTOzSFJDvZ9narFS0);
+  background-size: cover;
+  background-position: center;
+  grid-area: aaa;
+}
+.item6 .item6-6 .prii {
+  background-image: url(https://img.freepik.com/free-vector/green-background-with-wifi-symbol_23-2147625318.jpg?size=664&ext=jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: bbb;
+}
+.item6 .item6-6 .priii {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71gtcZbRlgL.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: ccc;
+}
+.item6 .item6-6 .priv {
+  background-image: url(https://i.pinimg.com/originals/38/49/3d/38493dddc1c8966f61ee98ee0d90172f.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: ddd;
+}
+.item6 .item6-6 .prv {
+  background-image: url(https://www.soy502.com/sites/default/files/styles/mobile_full_node/public/2020/Nov/17/mickey_mouse_aniversario_soy502_guatemala.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: eee;
+}
+.item6 .item6-6 .prvi {
+  background-image: url(https://media.comicbook.com/2019/02/xbox-logo-1159774.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-area: fff;
+}
+.item6 .item6-6 .prvii {
+  background-color: #59a1db;
+  grid-area: ggg;
+}
+.item6 .item6-6 .prvii p {
+  position: relative;
+  padding-left: 2mm;
+  margin: 0;
+}
+.item4-3 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+.grid-container .item1 > div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(85, 85, 85),
+    rgb(70, 70, 70),
+    rgb(85, 85, 85)
+  );
+}
+.grid-container .item1 .a2:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(100, 100, 100, 0),
+    rgba(70, 70, 70, 0),
+    rgba(100, 100, 100, 0)
+  );
+}
+.grid-container .item2 > div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(85, 85, 85),
+    rgb(70, 70, 70),
+    rgb(85, 85, 85)
+  );
+}
+.grid-container .item3:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(85, 85, 85),
+    rgb(70, 70, 70),
+    rgb(85, 85, 85)
+  );
+}
+.grid-container .item4 > div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(85, 85, 85, 0.2),
+    rgba(70, 70, 70, 0.35),
+    rgba(85, 85, 85, 0.2)
+  );
+  box-shadow: 0 0 5px 1px lightblue;
+}
+.grid-container .item5:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(85, 85, 85),
+    rgb(70, 70, 70),
+    rgb(85, 85, 85)
+  );
+}
+.grid-container .item6 > div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(85, 85, 85, 0.2),
+    rgba(70, 70, 70, 0.35),
+    rgba(85, 85, 85, 0.2)
+  );
+  box-shadow: 0 0 5px 1px lightblue;
+}
+
+.grid-container .item8 > div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(85, 85, 85, 0.2),
+    rgba(70, 70, 70, 0.35),
+    rgba(85, 85, 85, 0.2)
+  );
+  box-shadow: 0 0 5px 1px lightblue;
+}

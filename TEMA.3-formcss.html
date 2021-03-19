@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/TEMA.3-formcss.css" type="text/css" />
+    <title>TEMA 3 Formular cu CSSS</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="TEMA.3-formcss.html">Formular Pizza</a> |
+      <a href="TEMA.3-formlogin.html">Formular Log In</a> |
+      <a href="TEMA.3-chess.html">Tabla de Sah</a>
+    </nav>
+    <br />
+    <br />
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Pizza Order</legend>
+        <label for="name1">Your name:</label>
+        <input
+          type="text"
+          id="name1"
+          name="name"
+          required
+          minlength="3"
+          maxlength="10"
+          placeholder="Ion Ion"
+        /><br /><br />
+        <label for="email1">Your email:</label>
+        <input
+          type="email"
+          id="email1"
+          name="email"
+          required
+          placeholder="ion@example.jx"
+        /><br /><br />
+        <span>Topping:</span>
+        <input type="radio" id="supreme1" name="topping1" value="supreme" />
+        <label for="supreme1">Supreme</label>
+        <input
+          type="radio"
+          id="vegetarian1"
+          name="topping1"
+          value="vegetarian"
+        />
+        <label for="vegetarian1">Vegetarian</label>
+        <input
+          type="radio"
+          id="hawaian1"
+          name="topping1"
+          value="hawaian"
+          checked
+        />
+        <label for="hawaian1">Hawaian</label><br />
+        <br />
+        <label for="sauce1">Sauce:</label>
+        <select name="sauce" id="sauce1">
+          <option value="tomato">Tomato</option>
+          <option value="garlig">Garlig</option>
+          <option value="pesto">Pesto</option>
+        </select>
+        <br /><br />
+        <span>Extras:</span>
+        <input
+          type="checkbox"
+          id="extras11"
+          name="extras"
+          value="cheese"
+          checked
+        />
+        <label for="extras11">Cheese</label>
+        <input type="checkbox" id="extras21" name="extras" value="onion" />
+        <label for="extras21">Onion</label>
+        <input type="checkbox" id="extras31" name="extras" value="olives" />
+        <label for="extras31">Olives</label>
+        <br /><br />
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          step="1"
+          min="1"
+          max="7"
+        />
+        <br /><br />
+        <label for="delivery1">Delivery instruction:</label><br />
+        <textarea
+          id="delivery1"
+          name="delivery"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <br />
+        <br />
+        <label for="date">Delivery date:</label><br />
+        <input type="date" id="date" name="date" min="2021-01-01" />
+        <br /><br />
+        <button type="submit">Send order</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

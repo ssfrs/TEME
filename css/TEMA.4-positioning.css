@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  padding: 40px;
+  min-height: 120vh;
+  background-color: rgb(240, 240, 240);
+  width: 900px;
+  margin: auto;
+}
+nav {
+  margin: 20px;
+}
+.parent {
+  width: 800px;
+  height: 350px;
+  background-color: lightgreen;
+  border-radius: 3mm;
+  border: dotted 5px brown;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.parent h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.child {
+  width: 320px;
+  height: 250px;
+  position: absolute;
+}
+.child1 {
+  background-color: red;
+  border-radius: 5mm;
+  border: dotted 5px brown;
+  top: 0;
+  left: 0;
+}
+.child2 {
+  background-color: yellow;
+  border-radius: 5mm;
+  border: dotted 5px brown;
+  bottom: 0px;
+  left: 200px;
+  z-index: 1;
+}
+.child3 {
+  background-color: blue;
+  border-radius: 5mm;
+  border: dotted 5px brown;
+  top: 50px;
+  right: 20px;
+}

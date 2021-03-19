@@ -1,0 +1,163 @@
+.electro {
+  height: 250px;
+  width: 300px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 470px;
+}
+.telefon {
+  width: 150px;
+  height: 225px;
+  background-color: lightgrey;
+  border-radius: 3mm;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  box-shadow: 10px 0 30px 0px gray;
+}
+.telefon .noch {
+  width: 50px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 50%;
+  box-shadow: 0 0 2px 1px rgb(61, 61, 61);
+}
+.telefon .ecran {
+  width: 146px;
+  height: 195px;
+  background-color: white;
+  border-radius: 3mm;
+  position: relative;
+  top: 15px;
+  left: 2px;
+  box-shadow: 0 0 2px 0px gray;
+  opacity: 80%;
+}
+.telefon .ecran .prim {
+  width: 120px;
+  height: 20px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.telefon .ecran .sec {
+  width: 120px;
+  height: 5px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.telefon .ecran .ter {
+  width: 120px;
+  height: 5px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.telefon .ecran .qua {
+  width: 80px;
+  height: 20px;
+  background-color: rgb(102, 0, 94);
+  opacity: 80%;
+  position: relative;
+  top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laptop {
+  width: 200px;
+  height: 155px;
+  background-color: lightgrey;
+  border-radius: 3mm;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.laptop .camera {
+  width: 5px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 50%;
+  box-shadow: 0 0 2px 1px rgb(61, 61, 61);
+}
+.laptop .ecran {
+  width: 196px;
+  height: 125px;
+  background-color: white;
+  border-radius: 2mm;
+  position: relative;
+  top: 15px;
+  left: 2px;
+  box-shadow: 0 0 2px 0px gray;
+  opacity: 80%;
+}
+.laptop .ecran .prim {
+  width: 100px;
+  height: 20px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laptop .ecran .sec {
+  width: 120px;
+  height: 5px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laptop .ecran .ter {
+  width: 120px;
+  height: 5px;
+  background-color: gray;
+  opacity: 80%;
+  position: relative;
+  top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.laptop .ecran .qua {
+  width: 80px;
+  height: 20px;
+  background-color: rgb(102, 0, 94);
+  opacity: 80%;
+  position: relative;
+  top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.suport {
+  width: 300px;
+  height: 10px;
+  background-color: lightgray;
+  margin-top: -15px;
+  border-radius: 0 0 50% 50%;
+}
